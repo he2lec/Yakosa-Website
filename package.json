@@ -1,0 +1,48 @@
+{
+  "name": "yakosa-website",
+  "private": true,
+  "description": "Promotional website of Yakoas app",
+  "version": "0.1.0",
+  "author": "Adrien Hellec <adrien.hellec@epita.fr>",
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.11",
+    "gatsby": "^2.8.5",
+    "gatsby-image": "^2.1.2",
+    "gatsby-plugin-emotion": "^4.0.7",
+    "gatsby-plugin-netlify": "^2.1.2",
+    "gatsby-plugin-offline": "^3.0.11",
+    "gatsby-plugin-postcss": "^2.1.8",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.1.3",
+    "gatsby-remark-prismjs": "^3.2.10",
+    "gatsby-transformer-sharp": "^2.1.21",
+    "prism-themes": "^1.1.0",
+    "prismjs": "^1.16.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "tailwind.macro": "^1.0.0-alpha.10",
+    "tailwindcss-transitions": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.17.1",
+    "tailwindcss": "^1.1.2"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,md}\" \"*.js\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,json,md}\" \"*.js\"",
+    "eslint": "eslint \"src/**/*.{js,jsx,json}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,json}\"",
+    "lint": "yarn run eslint && yarn run format:check",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve"
+  }
+}
