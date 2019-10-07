@@ -31,7 +31,7 @@ const Contact = () => (
           </div>
         </div>
         <div class="px-6 py-4 text-right">
-        <form name="subscribe" method="POST" data-netlify="true">
+        <form name="subscribe" method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <input type="hidden" name="form-name" value="subscribe" />
           <input
             class="shadow appearance-none border rounded
