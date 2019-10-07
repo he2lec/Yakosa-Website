@@ -19,10 +19,13 @@ const Content = styled.div`
   padding-top: 0;
 `;
 
-// const Footer = styled.footer`
-//   display: flex;
-//   justify-content: center;
-// `
+const Footer = styled.footer`
+  ${tw`text-white p-6 text-2xl mt-16`}
+  font-family: 'La Belle Aurore', 'Roboto', 'Avenir', 'Helvetica', 'sans-serif';
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -40,6 +43,13 @@ const Layout = ({ children }) => (
         <Content>
           <main>{children}</main>
         </Content>
+        <Footer>
+          Made with
+          <span role="img" className="ml-2 mr-2" aria-label="Love">
+            ❤️
+          </span>
+          by Yakosa Team
+        </Footer>
       </>
     )}
   />
