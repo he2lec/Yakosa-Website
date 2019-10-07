@@ -31,15 +31,19 @@ const Contact = () => (
           </div>
         </div>
         <div class="px-6 py-4 text-right">
+        <form name="subscribe" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="subscribe" />
           <input
             class="shadow appearance-none border rounded
             w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none
             focus:shadow-outline"
             id="email"
+            name="email"
             type="text"
             placeholder="email@provider.xx"
           ></input>
-          <Submit>Suscribe</Submit>
+          <Submit type="submit">Suscribe</Submit>
+          </form>
         </div>
       </Card>
     </Container>
