@@ -9,12 +9,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
+import tw from 'tailwind.macro';
 
 import './layout.css';
 
 const Content = styled.div`
+  ${tw`text-white`}
   margin: 0 auto;
-  max-width: 860px;
   padding-top: 0;
 `;
 
@@ -38,9 +39,6 @@ const Layout = ({ children }) => (
       <>
         <Content>
           <main>{children}</main>
-          {/* <Footer>
-            © {new Date().getFullYear()}, adrienhellec.fr
-          </Footer> */}
         </Content>
       </>
     )}

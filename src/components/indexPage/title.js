@@ -9,22 +9,27 @@ const Container = styled.div`
 `;
 
 const OuterContainer = styled.div`
-  ${tw`text-black`}
+  ${tw`text-black pt-16`}
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 78vh;
 `;
 
 const Description = styled.p`
+  ${tw`text-white text-4xl font-light`}
   padding: 0;
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+`;
+
+const Bold = styled.span`
+  ${tw`font-bold`}
 `;
 
 const NameHeader = styled.h1`
-  font-size: 3.5rem;
+  ${tw`text-white uppercase`}
+  text-shadow: 1px 1px 1px rgba(0,0,0,1);
+  font-size: 8rem;
   margin-bottom: 0;
 `;
 
@@ -44,7 +49,9 @@ const Title = () => (
       <OuterContainer>
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description>{data.site.siteMetadata.description}</Description>
+          <Description>
+            Shop <Bold>more</Bold>, Pay <Bold>less</Bold>
+          </Description>
         </Container>
       </OuterContainer>
     )}

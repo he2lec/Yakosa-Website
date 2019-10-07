@@ -11,6 +11,10 @@ body {
   font-family: 'Roboto', 'Avenir', 'Helvetica', 'sans-serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(120,11,124);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(120,11,124,1) 40%), url('../images/background.jpg');
+  height: 200vh;
+  background-size: contain;
 }
 article,
 aside,
